@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+    margin-bottom:25px;
+}
+
+form{
+    display:grid;
+    gap:15px;
+}
+
+input,select{
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#667eea;
+}
+
+button{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#667eea;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#5648c0;
+}
+
+.summary{
+    margin-top:25px;
+    text-align:center;
+    background:#f4f6ff;
+    padding:20px;
+    border-radius:15px;
+}
+
+.summary p{
+    font-size:30px;
+    font-weight:bold;
+    color:#667eea;
+}
+
+.expense-list{
+    margin-top:25px;
+}
+
+.expense-list h2{
+    margin-bottom:15px;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:#f8f8f8;
+    margin-bottom:10px;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.expense-info{
+    display:flex;
+    flex-direction:column;
+}
+
+.category{
+    color:#777;
+    font-size:14px;
+}
+
+.delete-btn{
+    background:red;
+    padding:8px 12px;
+    border-radius:8px;
+}
+
+.delete-btn:hover{
+    background:darkred;
+}
